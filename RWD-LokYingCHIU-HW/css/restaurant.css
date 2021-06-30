@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+/*finish reseting*/
+
+/*header*/
+.wrap{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    background-image: url("../images/header_desktop.png");
+    max-width: 1049px;
+    height: 420px;
+    margin-bottom: 50px;
+}
+.topbar{
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.topbar a{
+    display: block;
+    width: 120px;
+    height: 24px;
+    font-family: NotoSansCJKtc-Black;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin:16px 42px 16px 42px;
+    font-weight: bolder;
+}
+.topbar .menu{
+    display: flex;
+}
+.topbar .menu li{
+    padding: 18px 10px 17px 10px;
+    margin:0px 5px 0px 5px;
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+}
+.slogan{
+    margin:auto;
+    width: 460px;
+    background: rgba(0,0,0,0.35);
+    margin-top: 123px;
+    color:white;
+    padding-bottom: 26px;
+}
+.slogan h2{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 36px;
+    text-align: center;
+    padding:20px 0px 10px 0px;
+}
+.slogan p{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    text-align: center;
+    padding-top:5px;
+}
+/*features*/
+.title h4{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 20px;
+    color: #3D1101;
+    line-height: 32px;
+    text-align: center;
+}
+.title{
+    position: relative;
+    border:1px solid blue;
+}
+.title .line{
+    width: 45%;
+    height: 0px;
+    border: 1px solid #979797;
+    position: absolute;
+    top:32px;
+    left:27.44%;
+}
+
+/*footer*/
+.footer{
+    display: flex;
+    background: #efe9e7;
+    padding:45px;
+}
+.infoBox{
+    display: flex;
+}
+.infoBox h3{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 24px;
+    color: #3D1101;
+    margin-bottom: 16px;
+}
+.infoBox p, .infoBox li{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    color: #3D1101;
+}
+.infoBox li{
+    list-style-type: disc;
+}
+.about, .contact{
+    width: 230px;
+}
+.about{
+    margin-right: 30px;
+}
+.icons{
+    text-align: end;
+}
+.icons h2{
+    font-family: NotoSansCJKtc-Black;
+    font-size: 49px;
+    color: #3D1101;
+    letter-spacing: 0px;
+}
+.icons a{
+    font-family: FontAwesome;
+    font-size: 36px;
+    margin-left: 12px;
+}
+.googleIcon{
+    color: #DB4437;
+}
+.twitterIcon{
+    color: #41ABE1;
+}
+.facebookIcon{
+    color:#3A5795;
+}
