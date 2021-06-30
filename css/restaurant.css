@@ -113,6 +113,9 @@ a{
     padding-top:5px;
 }
 /*features*/
+.features{
+    background: rgba(250,250,250,0.70);
+}
 .title h4{
     font-family: MicrosoftJhengHeiRegular;
     font-size: 20px;
@@ -122,7 +125,7 @@ a{
 }
 .title{
     position: relative;
-    border:1px solid blue;
+    margin-bottom: 30px;
 }
 .title .line{
     width: 45%;
@@ -132,12 +135,164 @@ a{
     top:32px;
     left:27.44%;
 }
+.featureBox{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.featureBox li{
+    width: 25.4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.featureBox img{
+    border-radius: 100px;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+.featureBox h5{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 18px;
+    color: #3D1101;
+    margin-bottom: 11px;
+}
+.featureBox p{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    color: #3D1101;
+}
+
+/*chef*/
+.chef{
+    background: #3D1101;
+    display: flex;
+}
+.chefPhoto{
+    margin-left: 4%;
+}
+.chefIntro{
+    margin-left: 2.4%;
+    color: #EFE9E7;
+}
+.chefIntro h5{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 81px;
+    padding:6px 0px 6px 0px;
+}
+.chefIntro h6{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    padding: 2.5px 0px 2.5px 0px;
+    margin-bottom: 16px;
+}
+.chefIntro p{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    margin-right: 7.5%;
+    line-height: 25px;
+}
+
+/*thoughts*/
+.thoughts{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #3D1101;
+    background: #efe9e7;
+}
+.thoughts h4{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.thoughts ul{
+    display: flex;
+    justify-content: space-around;
+}
+.thoughtBox .who{
+    display: flex;
+    align-items: center;
+}
+.thoughtBox img{
+    border-radius: 33.5px;
+    margin-right: 13px;
+}
+.thoughtBox .what{
+    margin-left: 80px;
+}
+.thoughtBox .what h6{
+    margin-top: 16px;
+    text-align: right;
+}
+.thoughtBox{
+    width: 29%;
+}
+
+/*book*/
+.book{
+    background: rgba(250,250,250,0.70);
+    padding: 50px 2.4% 50px 2.4%;
+
+}
+.book h4{
+    text-align: center;
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 24px;
+    color: #3D1101;
+    padding: 4px 0px 4px 0px;
+}
+
+.info{
+    display: flex;
+    margin-top: 38px;
+}
+
+.info label, p{
+    margin-bottom: 6px;
+}
+.info input{
+    padding: 5px 14px 5px 14px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+.longAns{
+    display: block;
+    width: 90%;
+}
+.info form{
+    width: 45%;
+    margin-left: 2%;
+}
+.button{
+    margin-top: 28px;
+    display: flex;
+    justify-content: flex-end;
+}
+.button input{
+    margin-left:11px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.button .reset{
+    background-color: rgba(0,0,0,0.35);
+}
+.button .submit{
+    background: #F56C23;
+}
 
 /*footer*/
 .footer{
     display: flex;
     background: #efe9e7;
     padding:45px;
+    justify-content: space-between;
 }
 .infoBox{
     display: flex;
@@ -184,4 +339,37 @@ a{
 }
 .facebookIcon{
     color:#3A5795;
+}
+
+/*cart*/
+.cart{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 25px;
+    position:fixed;
+    right:10px;
+    bottom:80px;
+    background: #3D1101;
+    opacity: 0.8;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*topButton*/
+.topButton{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 25px;
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    background: black;
+    opacity: 0.8;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

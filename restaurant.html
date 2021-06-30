@@ -27,9 +27,62 @@
         <div class="features">
             <div class="title"><h4>客人總是在詢問</h4><h4>這麼好吃的秘訣是什麼</h4>
                 <div class="line"></div></div>
-            <div class="featureBox"></div>
-            <div class="featureBox"></div>
-            <div class="featureBox"></div>
+            <ul class="featureBox">
+                <li><img src="images/feature_1.png" alt=""><h5>台灣本土蔬菜</h5><p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p></li>
+                <li><img src="images/feature_2.png" alt=""><h5>專業米其林廚師</h5><p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p></li>
+                <li><img src="images/feature_3.png" alt=""><h5>對於專業不能退讓</h5><p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p></li>
+            </ul> 
+        </div>
+        <div class="chef">
+            <img src="images/main_chef_brown.png" alt="photo of the main chef" class="chefPhoto">
+            <div class="chefIntro">
+                <h5>今日主廚：帕金森、梅在帕</h5>
+                <h6>Tody's Chef: Plum in Shock</h6>
+                <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+            </div>
+        </div>
+        <div class="thoughts">
+            <h4>聽聽別人的感想</h4>
+            <ul>
+                <li class="thoughtBox">
+                    <div class="who"><img src="images/avatar_1.png" alt="人像照片"><h6>高雄一口吃</h6></div>
+                    <div class="what"><p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p><h6> -- 產品經理</h6></div>
+                </li>
+                <li class="thoughtBox">
+                    <div class="who"><img src="images/avatar_2.png" alt="人像照片"><h6>廟口小霸王</h6></div>
+                    <div class="what"><p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p><h6> -- 金身道士</h6></div>
+                </li>
+                <li class="thoughtBox">
+                    <div class="who"><img src="images/avatar_3.png" alt="人像照片"><h6>春天也來了</h6></div>
+                    <div class="what"><p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p><h6> -- 美麗萬分</h6></div>
+                </li>
+            </ul>
+        </div>
+        <div class="book">
+            <h4>我們的位置不太夠坐</h4>
+            <h4>要不要先定位呢？</h4>
+            <div class="info">
+                <img class="map" src="images/Map.png" alt="map">
+                <form action="#">姓名
+                    <label for="name"></label>
+                    <input class="longAns" id="name" type="text" placeholder="六角講師吃尾牙">
+                    <label for="phoneNumber">電話</label>
+                    <input class="longAns" id="phoneNumber" type="tel" placeholder="02-1234567">
+                    <label for="mail">信箱</label>
+                    <input class="longAns" id="mail" type="email" placeholder="test@gmail.com">
+                    <label for="people">人數</label>
+                    <input class="longAns" id="people" type="number">
+                    <p>是否需要素食</p>
+                    <input type="radio" name="veg" id="vegYes" value="是">
+                    <label for="vegYes">是</label>
+                    <input type="radio" name="veg" id="vegNo" value="否">
+                    <label for="vegNo">否</label>
+                    <div class="button">
+                        <input class="reset" type="reset" value="取消">
+                        <input class="submit" type="submit" value="送出">
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="footer">
             <div class="infoBox">
@@ -51,7 +104,14 @@
                 <a href="#"><i class="fab fa-google-plus-square googleIcon"></i></a><a href="#"><i class="fab fa-twitter-square twitterIcon"></i></a><a href="#"><i class="fab fa-facebook-square facebookIcon"></i></a>
             </div>
         </div>
+        <a href="#" class="cart">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+        <a href="#" class="topButton">
+            <i class="fas fa-caret-up"></i>
+        </a>
     </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/826d1f650f.js" crossorigin="anonymous"></script>
     <script src="js/restaurant.js"></script>
 </body>
