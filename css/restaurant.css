@@ -64,7 +64,6 @@ a{
     background-image: url("../images/header_desktop.png");
     max-width: 1049px;
     height: 420px;
-    margin-bottom: 50px;
 }
 .topbar{
     background: rgba(0,0,0,0.75);
@@ -111,6 +110,92 @@ a{
     font-size: 16px;
     text-align: center;
     padding-top:5px;
+}
+/*footer*/
+.footer{
+    display: flex;
+    background: #efe9e7;
+    padding:45px;
+    justify-content: space-between;
+}
+.infoBox{
+    display: flex;
+}
+.infoBox h3{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 24px;
+    color: #3D1101;
+    margin-bottom: 16px;
+}
+.infoBox p, .infoBox li{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    color: #3D1101;
+}
+.infoBox li{
+    list-style-type: disc;
+}
+.about, .contact{
+    width: 230px;
+}
+.about{
+    margin-right: 30px;
+}
+.icons{
+    text-align: end;
+}
+.icons h2{
+    font-family: NotoSansCJKtc-Black;
+    font-size: 49px;
+    color: #3D1101;
+    letter-spacing: 0px;
+}
+.icons a{
+    font-family: FontAwesome;
+    font-size: 36px;
+    margin-left: 12px;
+}
+.googleIcon{
+    color: #DB4437;
+}
+.twitterIcon{
+    color: #41ABE1;
+}
+.facebookIcon{
+    color:#3A5795;
+}
+
+/*cart*/
+.cart{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 25px;
+    position:fixed;
+    right:10px;
+    bottom:80px;
+    background: #3D1101;
+    opacity: 0.8;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*topButton*/
+.topButton{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 25px;
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    background: black;
+    opacity: 0.8;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*features*/
 .features{
@@ -287,89 +372,82 @@ a{
     background: #F56C23;
 }
 
-/*footer*/
-.footer{
+/*/////////////////CART PAGE///////////////////*/
+.cartContent{
     display: flex;
     background: #efe9e7;
-    padding:45px;
-    justify-content: space-between;
+    padding-top: 50px;
 }
-.infoBox{
-    display: flex;
-}
-.infoBox h3{
-    font-family: MicrosoftJhengHeiRegular;
-    font-size: 24px;
+.leftOrderMenu{
     color: #3D1101;
-    margin-bottom: 16px;
+    width: 21.5%;
+    margin-left: 4%;
 }
-.infoBox p, .infoBox li{
+.cartContent .leftOrderMenu{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 20px;
+    line-height: 32px;
+}
+.leftOrderMenu h3{
+    text-align: center;
+}
+.leftOrderMenu a{
     font-family: MicrosoftJhengHeiRegular;
     font-size: 16px;
+    line-height: 32px;
+    border-bottom: 1px solid #3D1101;
     color: #3D1101;
+    display: block;
 }
-.infoBox li{
-    list-style-type: disc;
+.leftOrderMenu li:hover{
+    background-color:#3D1101 ;
+    color:white
 }
-.about, .contact{
-    width: 230px;
+.orderChoices{
+    width: 68.4%;
+    margin-left: 2%;
 }
-.about{
-    margin-right: 30px;
+.searchingBar{
+    width: 45%;
+    border: 2px solid #3D1101;
+    height: 32px;
+    margin-bottom: 26px;
 }
-.icons{
-    text-align: end;
+.orderChoices ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
-.icons h2{
-    font-family: NotoSansCJKtc-Black;
-    font-size: 49px;
-    color: #3D1101;
-    letter-spacing: 0px;
+.topOfChoices{
+    display: flex;
 }
-.icons a{
-    font-family: FontAwesome;
-    font-size: 36px;
-    margin-left: 12px;
-}
-.googleIcon{
-    color: #DB4437;
-}
-.twitterIcon{
-    color: #41ABE1;
-}
-.facebookIcon{
-    color:#3A5795;
+//////////////////*need to be altered*///////////////
+.orderChoices .productBox .product{
+    width: 220px;
 }
 
-/*cart*/
-.cart{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    font-size: 25px;
-    position:fixed;
-    right:10px;
-    bottom:80px;
-    background: #3D1101;
-    opacity: 0.8;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product h4, .product h5, .product h6, .product p{
+    text-align: center;
 }
-/*topButton*/
-.topButton{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    font-size: 25px;
-    position:fixed;
-    right:10px;
-    bottom:10px;
-    background: black;
-    opacity: 0.8;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product h4{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 20px;
+    color: #3D1101;
+}
+.product h6{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 12px;
+    color: #3D1101;
+}
+.product h5{
+    font-family: Roboto-Light;
+    font-size: 20px;
+    color: #3D1101;
+}
+.product p{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    color: #FF5E45;
+    border: 2px solid #FF5E45;
+    border-radius: 3px;
 }
