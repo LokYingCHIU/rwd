@@ -59,6 +59,22 @@ a{
     width: 80%;
     margin: auto;
 }
+/*
+.iPad{
+    display: none;
+}*/
+@media(max-width:768px){
+    .wrap{
+        width: 100%;
+    }
+    /*.iPad{
+        display: block;
+    }
+    .PC{
+        display: none;
+    }*/
+}
+
 /*header*/
 .header{
     background-image: url("../images/header_desktop.png");
@@ -118,7 +134,7 @@ a{
     text-align: center;
     padding-top:5px;
 }
-.menu li .dropdown{
+.header .dropdown{
     display: none;
     position: absolute;
     top:40px;
@@ -126,11 +142,55 @@ a{
     width: 180px;
     background: rgba(0,0,0,0.75);
 }
-.dropdown li{
+.header .dropdown li{
     padding: 10px;
     border-bottom: 1px solid white;
 }
+.header .menuButton{
+    display: none;
+}
+.header .topMenu{
+    display: none;
+}
 
+    /*for iPad*/
+        /*header*/
+@media(max-width:768px){
+    .header .menu{
+        display: none;
+    }
+    .header .menuButton{
+        display: block;
+        margin: 20px;
+    }
+    .header .topbar{
+        position: relative;
+    }
+    .header .topMenu{
+        position: absolute;
+        top:57px;
+        right:0px;
+        background:black;
+    }
+    .header .topMenu a{
+        width: 180px;
+        padding: 10px 0px 10px 0px;
+        color:white;
+        display: block;
+        text-align: center;
+        border:1px solid rgba(248, 248, 94, 0.8);
+        font-weight: bolder;
+    }
+    .header .topMenu li{
+        position: relative;
+    }
+    .header .topMenu .dropdown{
+        background: black;
+        z-index: 100;
+    }
+
+    
+}
 
 /*footer*/
 .footer{
@@ -185,6 +245,15 @@ a{
 .facebookIcon{
     color:#3A5795;
 }
+
+    /*for iPad*/
+        /*footer*/
+@media(max-width:768px){
+    .footer .about{
+        display: none;
+    }
+}
+
 
 /*cartButton*/
 .cartButton{
@@ -242,19 +311,19 @@ a{
     top:32px;
     left:27.44%;
 }
-.featureBox{
+.featureBox.PC{
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
 }
-.featureBox li{
+.featureBox.PC li{
     width: 25.4%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
-.featureBox img{
+.featureBox.PC img{
     border-radius: 100px;
     max-width: 200px;
     margin-bottom: 20px;
@@ -270,25 +339,63 @@ a{
     font-size: 16px;
     color: #3D1101;
 }
+.features .featureBox.iPad{
+    display: none;
+}
+    /*for iPad*/
+        /*feature*/
+@media(max-width:768px){
+    .features .featureBox.PC{
+        display: none;
+    }
+    .features .featureBox.iPad{
+        display: block;
+    }
+    .features .featureBox.iPad li{
+        display: flex;
+    }
+    .featureBox.iPad img{
+        border-radius: 150px;
+        width: 300px;
+        height: 300px;
+        margin:0px 20px 20px 0px;
+    }
+    .featureBox.iPad .aboutFeature{
+        padding-top: 30px;
+        text-align: end;
+    }
+}
 
 /*chef*/
 .chef{
     background: #3D1101;
+    padding: 0px 10px 0px 10px;
     display: flex;
+    justify-content: space-between;
 }
-.chefPhoto{
-    margin-left: 4%;
+.theChef.PC{
+    margin-left: 10px;
+    display: block;
+    width: 470px;
+    height: 460px;
+}
+.chef .theChef.PC img{
+    width: 470px;
+    height: 460px;
 }
 .chefIntro{
-    margin-left: 2.4%;
+    margin-left: 15px;
     color: #EFE9E7;
+    max-width: 410px;
+}
+.chefIntro.PC{
+    margin-top: 81px;
+    padding:6px 0px 6px 0px;
 }
 .chefIntro h5{
     font-family: MicrosoftJhengHeiRegular;
     font-size: 20px;
     line-height: 32px;
-    margin-top: 81px;
-    padding:6px 0px 6px 0px;
 }
 .chefIntro h6{
     font-family: MicrosoftJhengHeiRegular;
@@ -299,8 +406,41 @@ a{
 .chefIntro p{
     font-family: MicrosoftJhengHeiRegular;
     font-size: 16px;
-    margin-right: 7.5%;
+    margin-right: 7.5px;
     line-height: 25px;
+}
+.theChef.iPad, .chefIntro.iPad{
+    display: none;
+}
+
+
+    /*for iPad*/
+        /*chef*/
+@media(max-width:768px){
+    .theChef.iPad, .chefIntro.iPad{
+        display: block;
+    }
+    .theChef.PC, .chefIntro.PC{
+        display: none;
+    }
+    .theChef.iPad{
+        width: 668px;
+        margin: auto;
+        position: relative;
+    }
+    .chef{
+        display: block;
+    }
+    .chefIntro.iPad{
+        position: absolute;
+        bottom:20px;
+        background: rgba(0,0,0,0.35);
+        padding: 10px;
+    }
+    .chefIntro.iPad h5{
+        padding-top: 15px;
+    }
+
 }
 
 /*thoughts*/
@@ -392,6 +532,15 @@ a{
 }
 .button .submit{
     background: #F56C23;
+}
+
+    /*for iPad*/
+        /*book*/
+
+@media(max-width:768px){
+    .book .map{
+        width: 330px;
+    }
 }
 
 /*/////////////////CART PAGE///////////////////*/

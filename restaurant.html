@@ -6,13 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>六角西餐廳 首頁</title>
     <link rel="stylesheet" href="css/restaurant.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
     <div class="wrap">
         <div class="header">
             <div class="topbar">
                 <a class="logo" href="restaurant.html"><h1>六角西餐廳</h1></a>
+                <a href="#" class="menuButton"><i class="fas fa-bars"></i></a>
                 <ul class="menu">
+                    <li>
+                        <a href="#">特色</a>
+                        <ul class="dropdown">
+                            <li>台灣本土蔬菜</li>
+                            <li>專業米其林廚師</li>
+                            <li>對於專業不能退讓</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">主廚</a>
+                        <ul class="dropdown">
+                            <li>Plum in Shock</li>
+                            <li>Pierre Gagnaire</li>
+                            <li>Yoshihiro Murata</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">地標</a></li>
+                </ul>
+                <ul class="topMenu">
                     <li>
                         <a href="#">特色</a>
                         <ul class="dropdown">
@@ -41,15 +62,27 @@
         <div class="features">
             <div class="title"><h4>客人總是在詢問</h4><h4>這麼好吃的秘訣是什麼</h4>
                 <div class="line"></div></div>
-            <ul class="featureBox">
+            <ul class="featureBox PC">
                 <li><img src="images/feature_1.png" alt=""><h5>台灣本土蔬菜</h5><p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p></li>
                 <li><img src="images/feature_2.png" alt=""><h5>專業米其林廚師</h5><p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p></li>
                 <li><img src="images/feature_3.png" alt=""><h5>對於專業不能退讓</h5><p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p></li>
             </ul> 
+            <ul class="featureBox iPad">
+                <li><img src="images/feature_1@2x.png" alt=""><div class="aboutFeature"><h5>台灣本土蔬菜</h5><p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p></div></li>
+                <li><img src="images/feature_2@2x.png" alt=""><div class="aboutFeature"><h5>專業米其林廚師</h5><p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p></div></li>
+                <li><img src="images/feature_3@2x.png" alt=""><div class="aboutFeature"><h5>對於專業不能退讓</h5><p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p></div></li>
+            </ul> 
         </div>
         <div class="chef">
-            <img src="images/main_chef_brown.png" alt="photo of the main chef" class="chefPhoto">
-            <div class="chefIntro">
+            <a class="theChef PC" href="images/main_chef_brown.png" data-lightbox="Tody's Chef" data-title="Tody's Chef: Plum in Shock"><img src="images/main_chef_brown.png" alt="photo of the main chef"></a>
+            <a class="theChef iPad" href="images/main_chef_brown@2x.png" data-lightbox="Tody's Chef" data-title="Tody's Chef: Plum in Shock"><img src="images/main_chef_brown@2x.png" alt="photo of the main chef">
+                <div class="chefIntro iPad">
+                    <h5>今日主廚：帕金森、梅在帕</h5>
+                    <h6>Tody's Chef: Plum in Shock</h6>
+                    <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+                </div>
+            </a>
+            <div class="chefIntro PC">
                 <h5>今日主廚：帕金森、梅在帕</h5>
                 <h6>Tody's Chef: Plum in Shock</h6>
                 <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
@@ -127,6 +160,7 @@
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/826d1f650f.js" crossorigin="anonymous"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/restaurant.js"></script>
 </body>
 </html>
