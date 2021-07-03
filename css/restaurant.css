@@ -59,20 +59,10 @@ a{
     width: 80%;
     margin: auto;
 }
-/*
-.iPad{
-    display: none;
-}*/
 @media(max-width:768px){
     .wrap{
         width: 100%;
     }
-    /*.iPad{
-        display: block;
-    }
-    .PC{
-        display: none;
-    }*/
 }
 
 /*header*/
@@ -187,9 +177,27 @@ a{
     .header .topMenu .dropdown{
         background: black;
         z-index: 100;
+    }   
+}
+    /*for iPone*/
+        /*header*/
+@media(max-width:414px){
+    .header{
+        background-image: url("../images/header_mobile.png");
+        max-width: 600px;
+        height: 420px;
     }
-
-    
+    .slogan h2{
+        font-size: 28px;
+    }
+    .slogan{
+        margin:auto;
+        width: 380px;
+        background: rgba(0,0,0,0.35);
+        margin-top: 67px;
+        color:white;
+        padding-bottom: 26px;
+    }
 }
 
 /*footer*/
@@ -254,6 +262,39 @@ a{
     }
 }
 
+    /*for iPone*/
+        /*footer*/
+@media(max-width:414px){
+    .footer{
+        text-align: center;
+        display: block;
+        padding:23px;
+    }
+    .infoBox h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .infoBox p, .infoBox li{
+        font-size: 14px;
+    }
+    .infoBox li{
+        list-style-type: none;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+    }
+    .about, .contact{
+        width: 300px;
+        margin: auto;
+    }
+    .icons{
+        text-align: center;
+    }
+    .icons h2{
+        margin-top: 15px;
+        font-size: 28px;
+        letter-spacing: 0px;
+    }
+}
 
 /*cartButton*/
 .cartButton{
@@ -351,6 +392,9 @@ a{
     .features .featureBox.iPad{
         display: block;
     }
+    .features{
+        padding: 25px;
+    }
     .features .featureBox.iPad li{
         display: flex;
     }
@@ -365,6 +409,25 @@ a{
         text-align: end;
     }
 }
+    /*for iPone*/
+        /*feature*/
+@media(max-width:414px){
+    .featureBox.iPad img{
+        border-radius: 150px;
+        width: 200px;
+        height: 200px;
+        margin:0px 20px 20px 0px;
+    }
+    .featureBox h5{
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .featureBox p{
+        font-size: 13px;
+        color: #3D1101;
+    }
+}
+
 
 /*chef*/
 .chef{
@@ -443,6 +506,45 @@ a{
 
 }
 
+    /*for iPone*/
+        /*chef*/
+@media(max-width:414px){
+    .theChef.iPad, .chefIntro.iPad{
+        display: none;
+    }
+    .theChef.PC, .chefIntro.PC{
+        display: block;
+    }
+    .chef .theChef.PC{
+        width: 390px;
+        height: auto;
+    }
+    .chef .theChef.PC img{
+        width: 390px;
+        height: auto;
+    }
+    .chef .theChef.PC{
+        margin: auto;
+    }
+    .chefIntro.PC{
+        margin-top: 20px;
+    }
+    .chefIntro h5{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .chefIntro h6{
+        font-size: 14px;
+        padding: 2.5px 0px 2.5px 0px;
+        margin-bottom: 16px;
+    }
+    .chefIntro p{
+        font-size: 12px;
+        margin-right: 7.5px;
+        line-height: 25px;
+    }
+}
+
 /*thoughts*/
 .thoughts{
     padding-top: 50px;
@@ -479,11 +581,23 @@ a{
     width: 29%;
 }
 
+    /*for iPone*/
+        /*thoughts*/
+
+@media(max-width:414px){
+    .thoughts ul{
+        display: block;
+    }
+    .thoughtBox{
+        width: 370px;
+        margin: auto;
+    }
+}
+
 /*book*/
 .book{
     background: rgba(250,250,250,0.70);
     padding: 50px 2.4% 50px 2.4%;
-
 }
 .book h4{
     text-align: center;
@@ -540,6 +654,30 @@ a{
 @media(max-width:768px){
     .book .map{
         width: 330px;
+    }
+    .book h4{
+        font-size: 20px;
+    }
+}
+
+    /*for iPone*/
+        /*book*/
+@media(max-width:414px){
+    
+    .info{
+        display: block;
+        margin-top: 20px;
+    }
+    .book{
+        padding: 30px 2.4% 30px 2.4%;
+    }
+    .book .map{
+        width: 400px;
+        height: auto;
+    }
+    .info form{
+        width: 90%;
+        margin-top: 15px;
     }
 }
 
@@ -670,6 +808,22 @@ a{
     padding: 4px;
 }
 
+    /*for iPad*/
+        /*CART PAGE*/
+
+        @media(max-width:768px){
+            .searchingBar{
+                width: 360px;
+            }
+            .typeBar{
+                width: 324px;
+                height: 32px;
+            }
+            .orderChoices .productBox{
+                justify-content: space-around;
+            }
+        }
+
 /*/////////////////LOGIN PAGE///////////////////*/
 .login{
     background: #EFE9E7;
@@ -759,11 +913,13 @@ a{
     background: rgba(0,0,0,0.35);
 }
 .login .registerButton a{
+    display: block;
     color:white;
 }
 .login .submitButton{
     background: #F56C23;
     color: white;
+    margin-left: 25px;
 }
 
 /*/////////////////REGISTER PAGE///////////////////*/
